@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" 
+            xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="com.mazitekgh.FXMLDocumentController" 
+    id="AnchorPane"
+            maxHeight="-Infinity" 
+            maxWidth="-Infinity"
+            prefHeight="200" 
+            prefWidth="320" >
+    <children>
+        
+       <Button id="btClick"
+               fx:id="connectButton"
+               layoutX="260.0"
+               layoutY="5.0"
+              
+               text="Connect"
+               AnchorPane.rightAnchor="0.0" 
+       />
+      <ComboBox fx:id="portCombo" 
+                focusTraversable="false" 
+                layoutY="5.0" 
+                prefHeight="31.0" 
+                prefWidth="235.0"
+                promptText="Select Port"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="85.0" 
+      />
+      <Label fx:id="disp" 
+          alignment="CENTER" 
+          contentDisplay="CENTER" 
+          layoutY="38.0" 
+          nodeOrientation="LEFT_TO_RIGHT" 
+          pickOnBounds="false"
+          prefHeight="162.0" 
+          prefWidth="320.0" 
+          style="-fx-background-color: #000;"
+          text="000 cm" textAlignment="CENTER"
+          textFill="#dd1600" textOverrun="CLIP" 
+          wrapText="true" AnchorPane.bottomAnchor="0.0" 
+          AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" 
+          AnchorPane.topAnchor="38.0"
+      >
+         <font>
+            <Font name="Agency FB Bold" size="94.0" />
+         </font>
+         
+      </Label>
+      <Label fx:id="notifyLabel" 
+             layoutX="7.0"
+             layoutY="182.0"
+             prefHeight="17.0"
+             prefWidth="293.0" 
+             text="" 
+             textFill="WHITE"
+             AnchorPane.bottomAnchor="1.0" 
+             AnchorPane.leftAnchor="7.0" 
+      />
+    </children>
+</AnchorPane>
